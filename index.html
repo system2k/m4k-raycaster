@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<head>
+		<title>Minecraft 4k</title>
+		<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+		<style>
+			body { background-color: #DDDDDD; font: 30px sans-serif; }
+			canvas, img {
+				image-rendering: optimizeSpeed;
+				image-rendering: -moz-crisp-edges;
+				image-rendering: -webkit-optimize-contrast;
+				image-rendering: optimize-contrast;
+				image-rendering: pixelated;
+				image-rendering: -o-crisp-edges;
+				-ms-interpolation-mode: nearest-neighbor;
+			}
+			.hidden { /* Not sure what this is */
+				display: none;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				border-collapse: collapse;
+				border-spacing: 0;
+				overflow: hidden;
+			}
+			html, tbody, body {
+				height: 100%;
+			}
+			table {
+				width: 100%;
+				line-height: 0;
+			}
+			tr#c {
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<table id = "canvas_holder">
+			<tbody>
+				<tr id="c">
+					<td>
+						<canvas id="game"></canvas>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<label style="position: absolute; bottom: 0px; right: 0px;" id="fps">FPS: --</label>
+		<span style="background-color: white; size: 30px; position: absolute; top: 0px; left: 0px;" id="loading">Loading map...</span>
+		<span style="background-color: white; size: 10px; position: absolute; bottom: 0px; left: 0px;" id="info_a">Open the console to chat</span>
+		<script src="./m4k.js"></script>
+	</body>
+</html>

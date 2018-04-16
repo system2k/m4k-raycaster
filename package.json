@@ -1,0 +1,12 @@
+{
+    "name": "minecraftfourkmultiplayer",
+    "version": "1.0.0",
+    "description": "Minecraft 4k Multiplayer Server",
+    "dependencies": {
+        "ws": "*"
+    },
+    "scripts": {
+        "start": "node server.js"
+    },
+    "private": true
+}
